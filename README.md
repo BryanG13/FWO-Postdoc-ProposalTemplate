@@ -1,10 +1,6 @@
 # FWO Postdoc Proposal Template
 
-A LaTeX template for preparing postdoctoral fellowship applications to the Research Foundation - Flanders (FWO). This template provides a structured format that complies with FWO guidelines and formatting requirements.
-
-## 📄 Project Overview
-
-This repository contains a complete LaTeX template for FWO postdoctoral fellowship applications. The template follows FWO's specific formatting requirements including Carlito 11 font, single line spacing, and 2.5cm margins.
+This repository contains a complete LaTeX template for the [junior](https://www.fwo.be/en/support-programmes/all-calls/postdoctoral-researchers/junior-postdoctoral-fellowship/) or the [senior](https://www.fwo.be/en/support-programmes/all-calls/postdoctoral-researchers/senior-postdoctoral-fellowship/) FWO postdoctoral fellowship applications. The template follows FWO's specific formatting requirements including Carlito 11 font, single line spacing, and 2.5cm margins.
 
 ## 🗂️ File Structure
 
