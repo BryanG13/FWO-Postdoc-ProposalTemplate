@@ -1,0 +1,111 @@
+\documentclass[11pt]{article}
+
+\usepackage{todonotes}
+\usepackage{parskip}
+
+\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{graphicx} % Required for inserting images   
+\bibliographystyle{IEEEtran}
+\usepackage{booktabs} 
+\usepackage{authblk}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{ragged2e}
+\usepackage{textcomp}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{breqn}
+\usepackage{pdfpages}
+\usepackage{sectsty}
+\usepackage[linesnumbered,ruled]{algorithm2e}
+\usepackage{tabto}
+\usepackage{afterpage}
+\usepackage{hyperref}
+\usepackage{colortbl}
+\usepackage{mathtools}
+
+% Use setspace for line spacing control
+\usepackage{setspace}
+
+% Use standard LaTeX fonts since we're using pdflatex
+% Carlito font will be loaded later
+
+\usepackage{caption} 
+% Remove duplicate setspace package
+\usepackage[sfdefault]{carlito}
+\usepackage[breakable, theorems, skins]{tcolorbox}
+\tcbset{enhanced}
+
+% ADD THE FOLLOWING COUPLE LINES INTO YOUR PREAMBLE
+\let\OLDthebibliography\thebibliography
+\renewcommand\thebibliography[1]{
+  \OLDthebibliography{#1}
+  \setlength{\parskip}{0.45pt}
+  \setlength{\itemsep}{0.75pt plus 0.3ex}
+}
+
+% Set section headings to 13pt
+\sectionfont{\fontsize{13}{11}\selectfont}
+\subsectionfont{\fontsize{12}{10}\selectfont}
+\subsubsectionfont{\fontsize{11}{9}\selectfont}
+
+\DeclareRobustCommand{\mybox}[2][gray!20]{%
+\begin{tcolorbox}[   %% Adjust the following parameters at will.
+        breakable,
+        left=0pt,
+        right=0pt,
+        top=0pt,
+        bottom=0pt,
+        colback=#1,
+        colframe=#1,
+        width=\dimexpr\textwidth\relax, 
+        enlarge left by=0mm,
+        boxsep=5pt,
+        arc=0pt,outer arc=0pt,
+        ]
+        #2
+\end{tcolorbox}
+}
+
+\title{APPLICATION POSTDOCTORAL FELLOWSHIP (senior)
+PROJECT OUTLINE}
+\author{Bryan David Galarza Montenegro}
+
+\begin{document}
+
+\singlespacing % Reset line spacing to 1 from here on
+
+
+\mybox{\center{\large\textbf{APPLICATION POSTDOCTORAL FELLOWSHIP (junior/senior)\\
+      PROJECT OUTLINE}}}
+%The titles below outline mandatory aspects to be included in the project description. You may freely add extra titles and subtitles as required, provided the document does not exceed 10 A4 pages. Please do not alter text layout (Calibri 11 or, when using LaTeX or another word processor, Carlito 11, line spacing 1, all page margins 2.5 cm); this layout applies to all parts of this document (e.g., tables, captions, figures and the reference list). Do not link to external documents or webpages. Remove all explanatory paragraphs (in comment now) from the final document. 
+\vspace{12pt}
+
+\raggedright
+\justifying
+\section*{Changes to previous project proposal} %(remove this title if this is the first submission)
+%If this postdoctoral project proposal has been submitted to FWO earlier, please concisely describe the major changes, e.g. how you considered the panel suggestions as a feedback to your first application.
+
+\section*{Rationale and positioning with regard to the state-of-the-art }
+%Elaborate the scientific motivation for the project proposal based on scientific knowledge gaps, and the issues and/or problems that you want to solve with this project. Concisely describe the related international state of the art, with reference to scientific literature. Position your project in relation to ongoing national and international research. 
+
+%Here is a simple example of citing references.
+Machine learning applications in urban planning have become increasingly important \cite{smith2023machine}, while data science methods continue to evolve for environmental research \cite{anderson2022data}. The development of sustainable transportation networks through multi-objective optimization approaches represents a growing area of research \cite{garcia2024sustainable}.
+
+\section*{Scientific research objectives}
+%Describe explicitly the scientific objective(s) and the research hypothesis. Explain whether and how the research is specifically challenging and inventive, describing in particular the innovative aspects of the envisaged results. Discuss in detail the results (or partial results) that you aim to achieve, such as specific knowledge and academic breakthroughs.
+
+
+\section*{Research Methodology and Work Plan}
+%Elaborate the different envisaged steps (experiments/activities) in your research, and motivate your strategic choices with the aim of reaching the objectives. Describe the set-up and cohesion of the work packages including intermediate goals (milestones). 
+
+%Show where the proposed methodology (research approach) is according to the state of the art and where it is novel. Discuss risks that might endanger reaching project objectives and the contingency plans to be put in place should this risk occur.
+
+%Use a table or graphic representation of the planned course of activities (timing work packages, milestones, critical path) over the 3-years grant period.
+
+\scriptsize
+% Include all bibliography entries
+\bibliography{FWO}
+%Give an overview of the bibliographical references that are relevant for your research proposal. 
+
+\end{document}

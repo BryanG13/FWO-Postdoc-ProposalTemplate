@@ -1,0 +1,61 @@
+{
+    // LaTeX formatting settings
+    "latex-workshop.formatting.latex": "latexindent",
+    "latex-workshop.formatting.bibtex": "bibtex-tidy",
+    "[latex]": {
+        "editor.defaultFormatter": "James-Yu.latex-workshop",
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true
+    },
+    "[bibtex]": {
+        "editor.defaultFormatter": "James-Yu.latex-workshop",
+        "editor.formatOnSave": true
+    },
+    
+    // LaTeX Workshop general settings
+    "latex-workshop.latex.autoBuild.run": "onFileChange",
+    "latex-workshop.latex.clean.fileTypes": [
+        "*.aux",
+        "*.bbl",
+        "*.blg",
+        "*.idx",
+        "*.ind",
+        "*.lof",
+        "*.lot",
+        "*.out",
+        "*.toc",
+        "*.acn",
+        "*.acr",
+        "*.alg",
+        "*.glg",
+        "*.glo",
+        "*.gls",
+        "*.fls",
+        "*.log",
+        "*.fdb_latexmk",
+        "*.snm",
+        "*.nav",
+        "*.synctex.gz"
+    ],
+    
+    // LaTeX indentation settings
+    "latex-workshop.formatting.latexindent.args": [
+        "-c",
+        "%TMPDIR%",
+        "%TMPFILE%",
+        "-y=defaultIndent: '%INDENT%'"
+    ],
+    
+    // BibTeX formatting settings with alphabetical sorting
+    "latex-workshop.formatting.bibtex-tidy.args": [
+        "--sort-fields",
+        "--sort",
+        "--align=14",
+        "--duplicates=key",
+        "--merge=combine",
+        "--strip-enclosing-braces",
+        "--drop-all-caps",
+        "--escape=false",
+        "--sort-fields=author,title,journal,booktitle,year,volume,number,pages,publisher,editor,address,month,note,url,doi,isbn"
+    ]
+}
