@@ -5,7 +5,7 @@
 
 \usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}
 \usepackage{graphicx} % Required for inserting images   
-\bibliographystyle{IEEEtran}
+\bibliographystyle{apalike}
 \usepackage{booktabs} 
 \usepackage{authblk}
 \usepackage{amsmath}
@@ -21,6 +21,7 @@
 \usepackage{tabto}
 \usepackage{afterpage}
 \usepackage{hyperref}
+\usepackage{natbib} % remove if using IEEE style
 \usepackage{colortbl}
 \usepackage{mathtools}
 
@@ -89,8 +90,8 @@ PROJECT OUTLINE}
 \section*{Rationale and positioning with regard to the state-of-the-art }
 %Elaborate the scientific motivation for the project proposal based on scientific knowledge gaps, and the issues and/or problems that you want to solve with this project. Concisely describe the related international state of the art, with reference to scientific literature. Position your project in relation to ongoing national and international research. 
 
-%Here is a simple example of citing references.
-Machine learning applications in urban planning have become increasingly important \cite{smith2023machine}, while data science methods continue to evolve for environmental research \cite{anderson2022data}. The development of sustainable transportation networks through multi-objective optimization approaches represents a growing area of research \cite{garcia2024sustainable}.
+%Here is a simple example of citing references. This exaple makes use of both \citet{key} → Author (Year) and \citep{key} → (Author, Year). If you use IEEE style, only \cite{key} → [Number] is available and you have to remove the natbib package. 
+Machine learning applications in urban planning have become increasingly important \citep{smith2023machine}, while data science methods continue to evolve for environmental research \citep{anderson2022data}. The development of sustainable transportation networks through multi-objective optimization approaches represents a growing area of research, as shown in \citet{garcia2024sustainable}.
 
 \section*{Scientific research objectives}
 %Describe explicitly the scientific objective(s) and the research hypothesis. Explain whether and how the research is specifically challenging and inventive, describing in particular the innovative aspects of the envisaged results. Discuss in detail the results (or partial results) that you aim to achieve, such as specific knowledge and academic breakthroughs.
