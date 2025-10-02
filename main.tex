@@ -24,6 +24,7 @@
 \usepackage{natbib} % remove if using IEEE style
 \usepackage{colortbl}
 \usepackage{mathtools}
+\usepackage{titlesec}
 
 % Use setspace for line spacing control
 \usepackage{setspace}
@@ -41,14 +42,31 @@
 \let\OLDthebibliography\thebibliography
 \renewcommand\thebibliography[1]{
   \OLDthebibliography{#1}
-  \setlength{\parskip}{0.45pt}
-  \setlength{\itemsep}{0.75pt plus 0.3ex}
+  \setlength{\parskip}{0pt}
+  \setlength{\itemsep}{0pt}
 }
 
-% Set section headings to 13pt
-\sectionfont{\fontsize{13}{11}\selectfont}
-\subsectionfont{\fontsize{12}{10}\selectfont}
-\subsubsectionfont{\fontsize{11}{9}\selectfont}
+% filepath: main.tex
+
+% filepath: main.tex
+
+% Section: 11pt, bold, no indent
+\titleformat{\section}
+{\bfseries\normalsize}           % Bold, 11pt (normalsize in 11pt doc)
+{\thesection}{0.5em}             % Label + 0.5em space
+{}                               % No extra code before title
+
+% Subsection: 11pt, bold+italic, small indent
+\titleformat{\subsection}
+{\bfseries\itshape\normalsize}   % Bold + italic, 11pt
+{\thesubsection}{1em}            % Label + 1em space
+{\hspace{1em}}                   % Indent title by 1em
+
+% Subsubsection: 11pt, italic, larger indent
+\titleformat{\subsubsection}
+{\itshape\normalsize}            % Italic, 11pt
+{\thesubsubsection}{1em}         % Label + 1em space
+{\hspace{2em}}                   % Indent title by 2em
 
 \DeclareRobustCommand{\mybox}[2][gray!20]{%
 \begin{tcolorbox}[   %% Adjust the following parameters at will.
@@ -104,7 +122,7 @@ Machine learning applications in urban planning have become increasingly importa
 
 %Use a table or graphic representation of the planned course of activities (timing work packages, milestones, critical path) over the 3-years grant period.
 
-\scriptsize
+
 % Include all bibliography entries
 \bibliography{FWO}
 %Give an overview of the bibliographical references that are relevant for your research proposal. 
