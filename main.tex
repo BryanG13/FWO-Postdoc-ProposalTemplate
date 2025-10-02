@@ -68,6 +68,16 @@
 {\thesubsubsection}{1em}         % Label + 1em space
 {\hspace{2em}}                   % Indent title by 2em
 
+% Disable hyperlinks in bibliography
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\@bibitem}{\hyper@anchorstart}{\@gobble}{}{}
+\patchcmd{\@lbibitem}{\hyper@anchorstart}{\@gobble}{}{}
+\makeatother
+\renewcommand{\url}[1]{#1}
+\usepackage{mathtools}
+\usepackage{titlesec}
+
 \DeclareRobustCommand{\mybox}[2][gray!20]{%
 \begin{tcolorbox}[   %% Adjust the following parameters at will.
         breakable,
